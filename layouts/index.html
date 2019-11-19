@@ -10,22 +10,11 @@
             {{ if .Site.Params.mainMenu }}
                 {{ range .Site.Params.mainMenu }}
                     <div class="big-link">
-                        {{ if eq .text "dialog" }}
-                            <a href="{{.link}}" class="animated">
-                                dialog
-                            </a>
-                        {{ end }}
-                        {{ if ne .text "dialog" }}
-                            <a href="{{.link}}">
-                                {{.text}}
-                            </a>
-                        {{ end }}
+                        <a href="{{.link}}">
+                            {{.text}}
+                        </a>
                     </div>
                 {{ end }}
-
-                <div class="big-link">
-
-                </div>
 
             {{ else }}
                 {{ range .Site.Sections }}
@@ -39,17 +28,4 @@
             
         </div>
     </body>
-    <script>
-        $('a.animated').hover(
-            function() {
-                var $this = $(this); // caching $(this)
-                $this.data('defaultText', $this.text());
-                $this.text("data and information analytics log");
-            },
-            function() {
-                var $this = $(this); // caching $(this)
-                $this.text($this.data('defaultText'));
-            }
-        );
-    </script>
 </html>
