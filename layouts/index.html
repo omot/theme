@@ -16,6 +16,12 @@
                     </div>
                 {{ end }}
 
+                <div class="big-link">
+                    <a href="" class="animated">
+                        test
+                    </a>
+                </div>
+
             {{ else }}
                 {{ range .Site.Sections }}
                     <div class="big-link"> 
@@ -28,4 +34,78 @@
             
         </div>
     </body>
+    <script>
+        $('a.animated').hover(
+            function() {
+                $(this)
+                    .animate({'opacity': '0%'}, 4000);
+            },
+            function() {
+                $(this)
+                    .animate({'opacity': '100%'}, 400);
+            }
+        );
+    </script>
 </html>
+
+
+
+<!-- <script>
+        var text = ["data and information analytics log",
+            "data and information analytics log",
+            "data and information analytics log",
+            "data and information analytics log",
+            "data and information analytics log",
+            "data and information analytics log",
+            "data and information analytics log",
+            "data and information analytics log",
+            "data and information analytics log",
+            "data and information analytics log",
+            "data and information analytics log",
+            "data and information analytics log",
+            "data and information analytics log",
+            "data and information analytics log",
+            "data and information analytics log",
+            "data and information analytics log",
+            "data and information analytic log",
+            "data and information analyti log",
+            "data and information analyt log",
+            "data and information analy log",
+            "data and information ana log",
+            "data and information an log",
+            "data and information a log",
+            "data and informatio a log",
+            "data and informatio a log",
+            "data and informati a log",
+            "data and informat a log",
+            "data and informa a log",
+            "data and inform a log",
+            "data and infor a log",
+            "data and info a log",
+            "data and inf a log",
+            "data and in a log",
+            "data and i a log",
+            "data an i a log",
+            "data a i a log",
+            "data  i a log",
+            "data i a log",
+            "dat i a log",
+            "da i a log",
+            "di a log",
+            "dia log",
+            "dialog"];
+        var counter = 0;
+        var elem = document.getElementById("changeText");
+        var inst = setInterval(change, 150);
+        elem.innerHTML = text[counter];
+        counter++;
+
+        function change() {
+            elem.innerHTML = text[counter];
+            counter++;
+            if (counter >= text.length) {
+                counter = text.length-1;
+                // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
+            }
+        }
+    </script>-->
