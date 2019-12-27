@@ -51,6 +51,15 @@ a {
   a:active {
     color: #b3b3b3; }
 
+a.poly {
+  color: #FF5F46 !important;
+  border-bottom-color: #FF5F46 !important; }
+  a.poly:hover {
+    color: #ffe3df !important;
+    border-bottom-color: #ffe3df !important; }
+  a.poly:active {
+    color: #FF5F46 !important; }
+
 button {
   padding: 20px;
   border: 0;
