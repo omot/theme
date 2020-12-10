@@ -23,7 +23,7 @@
 
     <nav role="navigation" class="flex-container" id="splash">
         <div class="big-link">
-            stuff i do on my own time
+            {{ .Site.Params.main_title }}
         </div>
         {{ if .Site.Params.mainMenu }}
         {{ range .Site.Params.mainMenu }}
